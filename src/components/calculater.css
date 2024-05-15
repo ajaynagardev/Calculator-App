@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.calc-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+}
+.calc-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 600;
+    border-radius: 15px;   
+}
+.heading-container{
+    padding: 10px;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+.bg-container{
+    background-color: #1f282c;
+    border-radius: 15px 15px 0px 0px ;
+    color: white;
+}
+.value-container{
+    height: 130px;
+    display: flex;
+    justify-content: flex-end;
+}
+.calculator-display{
+    display: flex;
+    align-self: flex-end;
+    font-size: 25px;
+    padding: 10px 15px 15px 10px;
+    font-weight: 500;
+}
+.calculator-keypad{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 100%;
+    gap: 15px;
+    font-size: 19px;
+    padding: 10px;
+}
+button{
+    border-radius: 50%;
+    padding: 9px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.toggle-mode{
+    display: flex;
+    justify-content: flex-end;
+}
+.border{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    position: relative;
+}
+.border-width{
+    position: absolute;
+    bottom: 5px;
+    border-radius: 10px;
+    width: 70px;
+    height: 5px;
+    background-color: gray;
+}
+.fabackspace{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+/* Dark mode  */
+.calc-wrapper-light{   
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    font-size: 600;
+    border-radius: 15px;
+}
+.bg-container-light{
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 15px 15px 0px 0px ;
+}
